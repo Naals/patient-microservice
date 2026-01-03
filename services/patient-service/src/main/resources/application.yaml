@@ -2,16 +2,16 @@ spring:
   application:
     name: patient-service
 
-#  datasource:
-#    url: jdbc:postgresql://localhost:5433/patient
-#    username: asik
-#    password: asik
-#    driver-class-name: org.postgresql.Driver
-#  jpa:
-#    hibernate:
-#      ddl-auto: update
-#    database: postgresql
-#    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    url: jdbc:postgresql://localhost:5433/patient
+    username: asik
+    password: asik
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
 
   kafka:
     producer:
