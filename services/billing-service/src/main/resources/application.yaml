@@ -3,7 +3,7 @@ spring:
     name: billing-service
 
 server:
-  port: 8050
+  port: 4001
 
 grpc:
   server:
