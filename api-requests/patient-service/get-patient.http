@@ -1,3 +1,4 @@
 ### GET request to example server
 GET http://localhost:4004/api/v1/patients
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0MUB0ZXN0LmNvbSIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzY3NDY1MjM2LCJleHAiOjE3Njc1MDEyMzZ9.wxB6ZJftPSUwJRjzAu-y79xUMRpY99SHi_F0VPMkRt0
 ###

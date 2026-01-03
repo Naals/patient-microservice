@@ -1,0 +1,8 @@
+### Register Request to get access login
+POST http://localhost:4004/api/auth/register
+Content-Type: application/json
+
+{
+  "email": "test1@test.com",
+  "password": "password123"
+}

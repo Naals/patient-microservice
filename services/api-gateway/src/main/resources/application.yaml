@@ -11,6 +11,8 @@ spring:
               uri: http://localhost:4000
               predicates:
                 - Path=/api/v1/patients/**
+              filters:
+                - JwtValidation
 
               # Route for /api/docs/patients to patient-service /v3/api-docs
             - id: api-docs-patient-route
@@ -20,5 +22,21 @@ spring:
               filters:
                 - RewritePath=/api-docs/patients,/v3/api-docs
 
+            - id: auth-service-route
+              uri: http://localhost:4005
+              predicates:
+                - Path=/api/auth/**
+
+            - id: api-docs-auth-route
+              uri: http://localhost:4005
+              predicates:
+                - Path=/api-docs/auth
+              filters:
+                 - RewritePath=/api-docs/auth,/v3/api-docs
+
 server:
   port: 4004
+
+auth:
+  service:
+    url: http://localhost:4005
